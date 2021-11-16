@@ -1,9 +1,19 @@
 import React from 'react';
 
+// Components
+
+import Header from './Components/Header/index';
+import Home from './Components/Home';
+
+// Styles
+import { GlobalStyle } from './GlobalStyle';
+
 function App() {
   return (
     <div className="App">
-      Start here.
+      <Header />
+      <Home />
+      <GlobalStyle />
     </div>
   );
 }
