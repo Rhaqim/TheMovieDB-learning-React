@@ -1,14 +1,9 @@
-import Click from "./Components/Click"
-import Counter from "./Components/Counter"
-import Header from "./Components/Header"
+import React from 'react';
 
 function App() {
   return (
-    <div className="container">
-      <Header title="Bakayarou" />
-      <h1>Hello World</h1>
-      <Click />
-      <Counter />
+    <div className="App">
+      Start here.
     </div>
   );
 }
