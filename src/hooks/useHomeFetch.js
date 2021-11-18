@@ -25,8 +25,7 @@ export const useHomeFetch = () => {
 
             setState(prev => ({
                 ...movies,
-                results:
-                    page > 1 ? [...prev.results, ...movies.results] : [movies.results],
+                results: page > 1 ? [...prev.results, ...movies.results] : [movies.results],
             }));
 
         } catch (error) {
