@@ -2,7 +2,7 @@ import React from "react";
 import {useParams} from "react-router-dom";
 
 // Config
-import { IMAGE_BASE_URL, POSTER_SIZE } from "../config";
+import { BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE } from "../config";
 
 // Componenets
 import Grid from "./Grid";
@@ -10,6 +10,7 @@ import Spinner from "./Spinner";
 import BreadCrumbs from "./BreadCrumbs";
 import MovieInfo from "./MovieInfo";
 import MovieInfoBar from "./MovieInfoBar";
+import Actor from "./Actor";
 
 //Hook
 import { useMovieFetch } from "../hooks/useMovieFetch";
@@ -33,6 +34,11 @@ const Movie = () => {
             <BreadCrumbs movieTitle={movie.original_title} />
             <MovieInfo movie={movie} />
             <MovieInfoBar time={movie.runtime} budget={movie.budget} revenue={movie.revenue} />
+            <Grid header="Actors">
+                {movie.actors.map(actor => (
+                    <Actor name={actor.name} character={actor.character} key={actor.credit_id} imageURL={actor.profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` : NoImage} />
+                ))}
+            </Grid>
         </>
     )
 }
