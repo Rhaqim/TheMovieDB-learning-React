@@ -24,7 +24,7 @@ const Home = () => {
   
   if (!state.results.length) return <p>No results found ...</p>;
 
-  console.log(state);
+  // console.log(state);
 
   return (
     <>
