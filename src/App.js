@@ -19,6 +19,7 @@ const App = () => (
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<NotFound />} />
         <Route path="/:movieId" element={<Movie />} />
+        {/* <Route path="/:movieId/:movieName" element={<Movie />} /> */}
       </Routes>
       <GlobalStyle />
     </Router>
