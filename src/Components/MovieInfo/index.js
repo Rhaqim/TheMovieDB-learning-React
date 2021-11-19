@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // styles 
 import { Wrapper, Content, Text } from "./MovieInfo.styles";
@@ -8,6 +9,7 @@ import Thumb from "../Thumb";
 
 // config
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../../config";
+import Movie from "../Movie";
 
 //IMAGE
 // import NoImage from "../images/no_image.jpg";
@@ -46,6 +48,10 @@ const MovieInfo = ({ movie }) => (
         </Content>
     </Wrapper>
 
-)
+);
+
+MovieInfo.prototypes = {
+    movie: PropTypes.instanceOf(Movie)
+}
 
 export default MovieInfo;

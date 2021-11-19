@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 // styles
@@ -15,6 +16,12 @@ const Thumb = ({ image, movieId, clickable }) => (
             <Image src={image} alt="movie" />
         )};
     </div>
-)
+);
+
+Thumb.prototypes = {
+    image: PropTypes.string,
+    movieId: PropTypes.string,
+    clickable: PropTypes.bool
+}
 
 export default Thumb;

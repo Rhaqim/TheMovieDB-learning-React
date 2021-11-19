@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 
 import RMDBLogo from '../../images/react-movie-logo.svg'
@@ -15,6 +16,6 @@ const Header = () => (
             <TMDBLogoImg src={TMDBLogo} alt="TMDBLogo" />
         </Content>
     </Wrapper>
-)
+);
 
 export default Header;
