@@ -6,7 +6,6 @@ import { calcTime, convertMoney } from "../../helpers";
 
 // Styles
 import { Wrapper, Content } from "./MovieInfoBar.styles";
-import MovieInfo from "../MovieInfo";
 
 const MovieInfoBar = ({ time, budget, revenue }) => (
     <Wrapper>

@@ -2,7 +2,7 @@ import React from "react";
 import {useParams} from "react-router-dom";
 
 // Config
-import { BACKDROP_SIZE, IMAGE_BASE_URL, POSTER_SIZE } from "../config";
+import { IMAGE_BASE_URL, POSTER_SIZE } from "../config";
 
 // Componenets
 import Grid from "./Grid";
